@@ -62,6 +62,8 @@ struct Trummor : Module
 
    Trummor_do_type processor;
 
+   ParamWidget *selector;
+
    Trummor();
    void step();
 };

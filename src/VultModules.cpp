@@ -33,6 +33,7 @@ void init(rack::Plugin *p)
    createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
    createModel<SplieWidget>(plugin, "Splie", "Splie");
    createModel<TrummorWidget>(plugin, "Trummor", "Trummor");
+   createModel<Trummor2Widget>(plugin, "Trummor2", "Trummor 2");
    createModel<ToheWidget>(plugin, "Tohe", "Tohe");
    createModel<TangentsWidget>(plugin, "Tangents", "Tangents");
 }

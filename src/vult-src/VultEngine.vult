@@ -26,12 +26,12 @@ fun stabile(in, cut_in, res_in, semblance_in) {
    return Stabile.process(in, cut, res, semblance);
 }
 
-fun lateralus(in, cut, res) {
-   return Lateralus.process(in, cut, res);
+fun lateralus(in, cut, res, db6_on, db12_on, db18_on, db24_on, input_on) {
+   return Lateralus.process(in, cut, res, db6_on, db12_on, db18_on, db24_on, input_on);
 }
 
-fun tangents(lp, bp, hp, cut, res) {
-   return Tangents.process(lp, bp, hp, cut, res);
+fun tangents(lp, bp, hp, cut, res, lp_on, bp_on, hp_on) {
+   return Tangents.process(lp, bp, hp, cut, res, lp_on, bp_on, hp_on);
 }
 
 fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
@@ -44,6 +44,10 @@ fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
 
 fun trummor(gate, osc_in, noise_in) {
    return processor:Trummor.do(gate, osc_in, noise_in);
+}
+
+fun trummor2(gate, osc_in, noise_in, osc_gate, noise_gate) {
+   return processor:Trummor2.do(gate, osc_in, noise_in, osc_gate, noise_gate);
 }
 
 fun tohe(x, tone_in) {
